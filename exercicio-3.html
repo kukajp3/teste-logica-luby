@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function func(oldArray){
+  return oldArray.filter(function( element ) {
+    return element !== undefined && element !== false && element !== '' && element !== 0 && element !== null;
+  });
+}
+document.write(func([1,2,'', undefined, null, 0, false, 3]));
+</script>
+
+</body>
+</html>

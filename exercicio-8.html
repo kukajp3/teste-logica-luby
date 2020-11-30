@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function func(array){
+  return [].concat.apply([], array);
+}
+document.write(func([1, 2, [3], [4, 5]]));
+</script>
+
+</body>
+</html>
